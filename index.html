@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="calculator"> 
+        <div id="screen">
+            <button id="history-btn">⟳</button>
+            <div class="small-screen">0</div>
+            <div class="main-screen">0</div>
+        </div>
+        <div class="btn-container">
+            <button class="function" aria-label="Percentage" >%</button>
+            <button class="function" aria-label="ClearEntry">CE</button>
+            <button class="function" aria-label="Clear">C</button>
+            <button class="function" aria-label="BackSpace">⌫</button>
+
+            <button class="function" aria-label="Reciprocal">1/x</button>
+            <button class="function" aria-label="Square">x²</button>
+            <button class="function" aria-label="Square Root">²√x</button>
+            <button class="function" aria-label="Factorial">x!</button>
+
+            <button class="function" aria-label="x power y">x<sup>y</sup></button>
+            <button class="constant" aria-label="Pi">π</button>
+            <button class="constant" aria-label="Euler's Number">e</button>
+            <button class="operator" aria-label="Divide">÷</button>
+
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator" aria-label="Multiply">*</button>
+
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator" aria-label="Subtract">-</button>
+
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator" aria-label="Add">+</button>
+
+            <button class="function" aria-label="Negate">+/-</button>
+            <button class="number">0</button>
+            <button class="decimal" aria-label="Decimal Point">.</button>
+            <button aria-label="Equals" id="equal">=</button>
+        </div>
+    </main>
+    <aside id="history-panel">
+        <button id="close-history" aria-label="Close History">×</button>
+        <h3>History</h3>
+        <div id="history-list"></div>
+        <button id="clear-history">Clear History</button>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
